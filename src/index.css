@@ -17,9 +17,14 @@ div {
     font-family: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: inherit;
-}
+
+
+*::-webkit-scrollbar { display: block; }
+*::-webkit-scrollbar-button { display: none; padding: 1rem; background-color: rgba(0, 0, 0, .25); border: 1px solid rgba(0, 0, 0, .45); }
+*::-webkit-scrollbar-track {  }
+*::-webkit-scrollbar-track-piece { display: block; background-color: rgba(0, 0, 0, .15); }
+*::-webkit-scrollbar-thumb { display: block; background: rgba(0, 0, 0, .45); }
+*::-webkit-resizer { display: none; }
 
 .link {
     text-transform: uppercase;
@@ -291,6 +296,27 @@ button[data-mint-done="true"] {
     color: #fff;
     text-shadow: 1px 1px 3px rgb(0 0 0 / 30%);
 
+}
+
+button.iekbcc0.iekbcc9.ju367vfx.ju367v11.ju367v90 {
+    height: 100px;
+}
+
+body > div:nth-child(3) > div > div > div._9pm4ki5.ju367va.ju367v10.ju367v8g > div > div > div > div > div:nth-child(2) > div > div.iekbcc0.ju367vb6.ju367va.ju367v6f.ju367v7z._1am14410 > div {
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+body > div:nth-child(3) > div > div > div._9pm4ki5.ju367va.ju367v10.ju367v8g > div > div > div > div > div:nth-child(2) > div > div.iekbcc0.ju367vb6.ju367va.ju367v6f.ju367v7z._1am14410 > div > div:nth-child(1) > div > button > div > div.iekbcc0.ju367va.ju367v10.ju367v2n > div {
+    display: none;
+}
+
+body > div:nth-child(3) > div > div > div._9pm4ki5.ju367va.ju367v10.ju367v8g > div > div > div > div > div:nth-child(2) > div > div.iekbcc0.ju367v70.ju367v7l.ju367v89 > div > button {
+    height: 45px;
+}
+
+body > div:nth-child(3) > div > div > div._9pm4ki5.ju367va.ju367v10.ju367v8g > div > div > div > div > div:nth-child(2) > div > div.iekbcc0.ju367vb6.ju367va.ju367v6f.ju367v7z._1am14410 > div > div > div > button > div > div.iekbcc0.ju367va.ju367v10.ju367v2n > h2 span {
+    white-space: nowrap;
 }
 
 [data-rk] > div:nth-child(2) > div > div {
