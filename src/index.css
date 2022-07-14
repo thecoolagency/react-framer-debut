@@ -1,0 +1,282 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: black;
+    color: white;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-family: inherit;
+}
+
+div {
+    font-family: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+}
+
+.link {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .2rem;
+}
+
+a:visited, a:focus {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+}
+
+#root {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#root .wrap svg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+}
+
+#root .wrap #Stars, #root .wrap #Sky {
+    bottom: unset;
+    top: 0;
+    width: auto;
+    min-height: 100vh;
+}
+
+@media screen and ( min-width: 749px ) {
+}
+
+@media screen and ( min-width: 990px ) {
+}
+
+.top-connect {
+    position: absolute;
+    z-index: 12;
+    right: 1rem;
+    top: 1.5rem;
+}
+
+.Navigation {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.Navigation ul {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: nowrap;
+    column-gap: 2rem;
+}
+
+.floating {
+    display: flex;
+    z-index: 9;
+}
+
+.Home {
+    display: flex;
+}
+
+.Page {
+    height: 100%;
+}
+
+/* svg elements */
+
+.BG {
+    position: absolute;
+}
+
+#Sky {
+    z-index: 0;
+    position: absolute;
+}
+
+#root .wrap #Moon {
+    max-width: 120px;
+    z-index: 9;
+    position: absolute;
+    bottom: unset;
+    top: 100px;
+    left: 100px;
+}
+
+#Stars {
+    z-index: 0;
+    position: absolute;
+    transition: all 200ms ease-in-out;
+}
+
+.first {
+    left: 100px!important;
+}
+
+.second {
+    left: 200px!important;
+}
+
+.thisMoon {
+    position: relative;
+    z-index: 0;
+}
+
+.bg-Ice {
+    position: absolute;
+    bottom: 20vh;
+    height: 100vh;
+    left: 0;
+    width: 100vw;
+}
+.moveStars {
+    position: absolute;
+}
+
+@media screen and ( min-width: 749px ) {
+
+    .bg-Ice {
+        position: absolute;
+        bottom: -10vh;
+        height: 100vh;
+        left: 0;
+        width: 100vw;
+    }
+
+    #root .wrap #Moon {
+        max-width: 160px;
+        z-index: 9;
+        position: absolute;
+        bottom: unset;
+        top: 0px;
+        left: 10rem!important;
+    }
+}
+
+.Base {
+    position: relative;
+    z-index: 9;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: hsla(0,0%,78.4%,.15);
+    box-shadow: 0 6px 8px rgb(10 10 10 / 17%);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 1rem;
+    border: 1px solid hsla(0,0%,100%,.18);
+    padding: 2.5rem;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgb(0 0 0 / 30%);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 0 0 3rem;
+  max-width: 700px;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.button, button {
+  appearance: none;
+  border: none;
+  font-family: Helvetica, ui-rounded;
+  background-image: linear-gradient(to right, #3898FF, #7A70FF);
+  display: inline-flex;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 700;
+  height: 35px;
+  padding: 0 24px;
+  border-radius: 9999px;
+  align-items: center;
+  color: white;
+  transition: all ease 100ms;
+}
+
+button:not(:disabled):hover {
+  transform: scale(1.04)
+}
+
+button[data-mint-loading="true"] {
+  background: rgba(22, 25, 31, 0.24);
+}
+
+button[data-mint-started="true"] {
+  background-image: linear-gradient(270deg, #FF6257, #FF5CA0);
+  position: relative;
+}
+
+  button[data-mint-started="true"]::after {
+    animation-name: pulse;
+    animation-duration: 500ms;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    background-color: #FF6257;
+    border-radius: inherit;
+    bottom: 0;
+    content: ' ';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+button[data-mint-done="true"] {
+   opacity: 0;
+   transform: scale(0.85);
+}
+
+[data-rk] > div:nth-child(2) {
+
+    background-color: hsla(0,0%,78.4%,.15);
+    box-shadow: 0 6px 8px rgb(10 10 10 / 17%);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 1rem;
+    border: 1px solid hsla(0,0%,100%,.18);
+    /*padding: 2.5rem;*/
+    color: #fff;
+    text-shadow: 1px 1px 3px rgb(0 0 0 / 30%);
+
+}
+
+[data-rk] > div:nth-child(2) > div > div {
+    border: none!important;
+}
+
+.connect > div > button:first-child {
+    display: none!important;
+}
