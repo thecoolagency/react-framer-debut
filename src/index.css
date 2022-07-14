@@ -284,7 +284,7 @@ button[data-mint-done="true"] {
    transform: scale(0.85);
 }
 
-[aria-labelledby="rk_connect_title"]  > div:nth-child(2) {
+[aria-labelledby="rk_connect_title"] > div:nth-child(2), [aria-labelledby="rk_account_modal_title"] > div:nth-child(2) {
 
     background-color: hsla(0,0%,78.4%,.15);
     box-shadow: 0 6px 8px rgb(10 10 10 / 17%);
