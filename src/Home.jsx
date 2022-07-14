@@ -71,7 +71,7 @@ const Home = () => {
 
 
                         {isConnected ? (
-                            <div><Link className="link button" to="/mint">Mint</Link></div>
+                            <div><Link className="button" to="/mint">Mint</Link></div>
                         ) : !isConnected && (
                             <div><Connect / ></div>
                         )}

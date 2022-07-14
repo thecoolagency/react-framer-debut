@@ -70,8 +70,15 @@ a:hover {
 .top-connect {
     position: absolute;
     z-index: 12;
-    right: 1rem;
-    top: 1.5rem;
+    right: 0.5rem;
+    top: 1rem;
+}
+
+@media screen and ( min-width: 749px ) {
+    .top-connect {
+        right: 1rem;
+        top: 1.5rem;
+    }
 }
 
 .Navigation {
@@ -80,6 +87,17 @@ a:hover {
     display: flex;
     width: 100vw;
     justify-content: center;
+    bottom: 2rem;
+}
+
+.Navigation ul {
+    padding: 0;
+}
+
+@media screen and ( min-width: 749px ) {
+    .Navigation {
+        bottom: unset;
+    }    
 }
 
 .Navigation ul {
@@ -200,7 +218,8 @@ a:hover {
   flex-wrap: wrap;
   width: 100%;
   padding: 0 0 0 3rem;
-  max-width: 700px;
+    width: 600px;
+    max-width: 70vw;
 }
 
 .responsive {
@@ -231,6 +250,7 @@ button:not(:disabled):hover {
 
 button[data-mint-loading="true"] {
   background: rgba(22, 25, 31, 0.24);
+  color: white;
 }
 
 button[data-mint-started="true"] {
