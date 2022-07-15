@@ -382,6 +382,17 @@ button[data-mint-done="true"] {
     opacity: 1;
 }
 
+@media screen and ( max-width: 749px ) {
+    .psych.minting {
+        left: 50vw;
+        opacity: 1;
+        top: -140vh;
+        -webkit-transform: scale(1);
+        transform: scale(2);
+    }
+}
+
+
 /* wallet connect */
 
 button.iekbcc0.iekbcc9.ju367vfx.ju367v11.ju367v90 {
