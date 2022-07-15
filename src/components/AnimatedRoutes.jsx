@@ -10,12 +10,12 @@ function AnimtedRoutes() {
     const location = useLocation();
 
     return (
-            <AnimatePresence>
-                <Routes location={location} key={location.path}>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/mint" element={<Mint />} />
-                </Routes>
-            </AnimatePresence>
-        )
+        <AnimatePresence>
+            <Routes location={location}>
+                <Route path="/" element={<Home />} />
+                <Route path="/mint" element={<Mint />} />
+            </Routes>
+        </AnimatePresence>
+    )
 }
 export default AnimtedRoutes

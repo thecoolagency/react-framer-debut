@@ -18,36 +18,39 @@ const Home = () => {
     const [ color ] = useState('#ffffff');
     const [ moonColor ] = useState('#ffffff');
     const [ skyColor ] = useState('#001850');
-    const [ viewBox ] = useState('0 0 1400 1400');
-    const [ classSet, setClassSet ] = useState('second');
+    const [ viewBox ] = useState('0 0 1400 900');
+    const [ classSet, setClassSet ] = useState('');
 
     return (
-        <>
+        <div style={{ backgroundColor: '#001850' }}>
             <motion.div
                 className="Home"
-                initial={{  }}
-                animate={{  }}
-                exit={{  }}
+                initial={{ top: '0px', position: 'relative' }}
+                animate={{ position: 'relative' }}
+                exit={{ height: "100%", top: 0, position: 'relative' }}
+                transition={{ type: "tween", duration: 1 }}
             >
 
-                <Sky skyColor={skyColor} viewBox={viewBox} />
+                <Sky skyColor={skyColor} viewBox={viewBox} classIs={classSet} />
                 <motion.div
                     className="moveStars"
-                    initial={{ top: '-100px', transform: 'scale(1.15)' }}
-                    animate={{ top: '-100px', transform: 'scale(1.1)' }}
-                    exit={{ top: '-100px', transform: 'scale(1.15)' }}
+                    initial={{ top: '0', left: '-150px', right: 0, opacity: 1, scale: 1.15 }}
+                    animate={{ top: '-150px', left: '0px', right: 0, opacity: 0.65, scale: 1.15 }}
+                    exit={{ top: '0', left: 0, right: 0, opacity: 1, scale: 1.15 }}
+                    transition={{ type: "tween", duration: 1 }}
                 >
                     <Stars color={color} viewBox={viewBox} classIs={classSet} />
                 </motion.div>
 
                 <motion.div
                     className="thisMoon"
-                    initial={{ top: '8rem' }}
-                    animate={{ top: '2rem' }}
-                    exit={{ top: '8rem' }}
+                    initial={{ top: '22rem', left: "-8rem" }}
+                    animate={{ top: '2rem', left: 0}}
+                    exit={{ top: '22rem', left: '-8rem' }}
+                    transition={{ type: "tween", duration: 1 }}
                 >
 
-                    <Moon color={moonColor} />
+                    <Moon color={moonColor} classIs={classSet} />
 
                 </motion.div>
 
@@ -57,6 +60,7 @@ const Home = () => {
                 initial={{ marginLeft: 0 }}
                 animate={{ marginLeft: 0 }}
                 exit={{ opacity: 0 }}
+                transition={{ type: "tween", duration: 0.4 }}
             >
 
                 <motion.div className="container"
@@ -65,7 +69,7 @@ const Home = () => {
                     exit={{ opacity: 0, top: '150%' }}
                 >
 
-                    <div className="">
+                    <div classIs={classSet}>
 
                         <h3>Welcome to PMF</h3>
 
@@ -87,12 +91,12 @@ const Home = () => {
             <div className="bg-Ice">
 
                 <motion.div className="BG"
-                        initial={{ bottom: '-280px', left: '20px' }}
-                        animate={{ bottom: '-340px', left: '30px' }}
-                        exit={{ bottom: '-340px', left: '10px' }}
+                        initial={{ bottom: '-320px', left: '30px' }}
+                        animate={{ bottom: '-280px', left: '20px' }}
+                        transition={{ type: "tween", duration: 1 }}
                 >
 
-                    <BGClear />
+                    <BGClear classIs={classSet} />
 
                 </motion.div>
                 
@@ -100,14 +104,15 @@ const Home = () => {
                     initial={{ bottom: '-220px' }}
                     animate={{ bottom: '-200px' }}
                     exit={{ bottom: '-220px'  }}
+                    transition={{ type: "tween", duration: 1 }}
                 >
 
-                    <BGDark />
+                    <BGDark classIs={classSet} />
 
                 </motion.div>
                 
             </div>
-        </>
+        </div>
     );
 }
 

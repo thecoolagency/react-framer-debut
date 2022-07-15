@@ -17,8 +17,6 @@ div {
     font-family: inherit;
 }
 
-
-
 *::-webkit-scrollbar { display: block; }
 *::-webkit-scrollbar-button { display: none; padding: 1rem; background-color: rgba(0, 0, 0, .25); border: 1px solid rgba(0, 0, 0, .45); }
 *::-webkit-scrollbar-track {  }
@@ -326,3 +324,95 @@ body > div:nth-child(3) > div > div > div._9pm4ki5.ju367va.ju367v10.ju367v8g > d
 .connect > div > button:first-child {
     display: none!important;
 }
+
+#eGWSNMe473i1 {
+    z-index: 9;
+}
+
+.thisMoon {
+    position:relative;
+    z-index: 10;
+    transition: opacity 900ms ease-in-out, transform 900ms ease-in-out;
+}
+
+.moveStars > #Stars {
+    transition: opacity 900ms ease-in-out, transform 900ms ease-in-out;   
+}
+
+.moveStars.minting > #Stars {
+    opacity: 0.35;
+    transform: scale(0.8);
+    transform-origin: top center;
+}
+
+.Mint.minting { 
+    opacity: 1;
+}
+
+.thisMoon.minting { 
+    opacity: .45;
+    z-index: 9;
+    transform: scale(0.90);
+    transform-origin: top left;
+}
+
+.Base.minting { 
+    opacity: 1;
+}
+
+.container {
+    transition: transform 900ms ease-in-out;
+}
+.container.minting { 
+    transform: scale(1.15) translate(-50%, -50%);
+    transform-origin: top left;
+}
+
+.Mint.minting { 
+}
+
+.Button.minting { 
+    opacity: 1;
+}
+
+
+.bg-Ice {
+    transition: bottom 900ms ease-in-out, opacity 900ms ease-in-out;
+}
+.bg-Ice.minting { 
+    opacity: 0.45;
+    bottom: -18vh;
+}
+
+.psych {
+    transform: scale(.35);
+    left: -50%;
+    height: 160vh;
+    opacity: 0;
+    min-height: 130vh;
+    position: absolute;
+    left: 0;
+    min-width: 160vw;
+    z-index: 1;
+    transition: opacity 2000ms linear, transform 2000ms linear;
+    width: 200vw;
+}
+
+.psych.minting {
+    transform: scale(1);
+    left: 0%;
+    top: -10%;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
