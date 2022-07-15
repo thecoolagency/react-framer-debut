@@ -49,10 +49,10 @@ const Mint = () => {
             // setClassSet('')
         }
         if (!isMintLoading) {
-            setClassSet('notmint')
+            // setClassSet('notmint')
         }
         if (mintError) {
-            setClassSet('notmint')
+            // setClassSet('notmint')
         }
     }, [totalSupplyData, isMintLoading]);
 
