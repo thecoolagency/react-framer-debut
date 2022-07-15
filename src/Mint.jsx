@@ -70,8 +70,7 @@ const Mint = () => {
     }
 
     return (
-        <>
-
+        <div style={{ backgroundColor: '#07297d' }}>
             <div className="overlay"></div>
             <div  className={`psych ${classSet}`}>
                 <Minting />
@@ -237,7 +236,7 @@ const Mint = () => {
                 </motion.div>
 
             </div>
-        </>
+        </div>
     )
 };
 
