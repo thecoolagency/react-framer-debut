@@ -331,7 +331,7 @@ body > div:nth-child(3) > div > div > div._9pm4ki5.ju367va.ju367v10.ju367v8g > d
 
 .thisMoon {
     position:relative;
-    z-index: 10;
+    z-index: 0;
     transition: opacity 900ms ease-in-out, transform 900ms ease-in-out;
 }
 
