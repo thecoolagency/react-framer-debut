@@ -46,7 +46,7 @@ const Mint = () => {
     React.useEffect(() => {
         if (totalSupplyData) {
             setTotalMinted(totalSupplyData.toNumber());
-            setClassSet('')
+            // setClassSet('')
         }
         if (!isMintLoading) {
             setClassSet('notmint')
@@ -72,7 +72,7 @@ const Mint = () => {
     return (
         <>
 
-            <div class="overlay"></div>
+            <div className="overlay"></div>
             <div  className={`psych ${classSet}`}>
                 <Minting />
             </div>

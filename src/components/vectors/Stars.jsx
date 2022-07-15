@@ -281,7 +281,7 @@ const Stars = ({ color, viewBox, classIs }) => {
                             </g>
                         </g>
                     </g>
-                    <g class="st162">
+                    <g className="st162">
                         <g>
                             <g>
                                 <circle fill="#ffffff" cx="849.4" cy="647.6" r="1.9"/>
