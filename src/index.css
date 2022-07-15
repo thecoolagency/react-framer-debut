@@ -64,6 +64,17 @@ a:hover {
     min-height: 100vh;
 }
 
+@media screen and ( max-width: 749px ) {
+    @supports (-webkit-touch-callout: none) {
+        #root .wrap #Stars, #root .wrap #Sky {
+            bottom: auto;
+            min-height: 100vh;
+            top: 6rem;
+            width: auto;
+            transform: scale(2.5);
+        }
+    }
+}
 @media screen and ( min-width: 749px ) {
 }
 
