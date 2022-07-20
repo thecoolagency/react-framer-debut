@@ -1,0 +1,109 @@
+/* mobile nav button */
+
+.hamburger > .bars { 
+    zoom: 0.2;
+}
+
+.hamburger .bars {
+    width: 120px;
+    height: 70px;
+    position: relative;
+    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
+            transition: -webkit-transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
+         -o-transition:         transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
+            transition:         transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
+            transition:         transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1),
+                        -webkit-transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
+            transition:         transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1),
+                        -webkit-transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
+}
+
+.hamburger .bars span {
+    display:  block;
+    width: 100%;
+    height: 10px;
+    background-color: var(--color-base-text);
+    margin-top: 20px;
+}
+
+.hamburger .bars span:first-child {
+    margin-top: 0;
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
+            transition: -webkit-transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
+         -o-transition:         transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
+            transition:         transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
+            transition:         transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1),
+                        -webkit-transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
+            transition:         transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1),
+                        -webkit-transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
+    -webkit-transition-delay: 0.4s;
+         -o-transition-delay: 0.4s;
+            transition-delay: 0.4s;
+}
+
+.hamburger .bars span:nth-child(3) {
+    width: 65%;
+    -webkit-transition: width 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+         -o-transition: width 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+            transition: width 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+    -webkit-transition-delay: 0.4s;
+         -o-transition-delay: 0.4s;
+            transition-delay: 0.4s;
+}
+
+.hamburger .bars .other-bar {
+    width: 10px;
+    height: 0;
+    background-color: var(--color-base-text);
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    margin-left: -5px;
+    -webkit-transition: height 0.4s cubic-bezier(0.694, 0.048, 0.335, 1);
+         -o-transition: height 0.4s cubic-bezier(0.694, 0.048, 0.335, 1);
+            transition: height 0.4s cubic-bezier(0.694, 0.048, 0.335, 1);
+    z-index: 10;
+}
+
+.hamburger.open .bars {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition-delay: 0.4s;
+         -o-transition-delay: 0.4s;
+            transition-delay: 0.4s;
+}
+
+.hamburger.open .bars span:first-child {
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+            transition: -webkit-transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+         -o-transition:         transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+            transition:         transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+            transition:         transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1),
+                        -webkit-transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+            transition:         transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1),
+                        -webkit-transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+}
+
+.hamburger.open .bars span:nth-child(3) {
+    width: 0;
+    -webkit-transition: width 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+         -o-transition: width 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+            transition: width 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+}
+
+.hamburger.open .bars .other-bar {
+    height: 120px;
+    -webkit-transition: height 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+         -o-transition: height 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+            transition: height 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+    -webkit-transition-delay: 0.3s;
+         -o-transition-delay: 0.3s;
+            transition-delay:0.3s;
+}

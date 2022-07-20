@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion'
 
-const Home = () => {
+const Page = () => {
 
     return (
         <motion.div
@@ -11,10 +11,10 @@ const Home = () => {
             exit={{ opacity: 0 }}
             transition={{ type: "tween", duration: 0.2 }}
         >
-            <h2>Home</h2>
+            <h2>Page</h2>
             <p>Lorem ipsum dolor sit amet, consectet.</p>
         </motion.div>
     );
 };
 
-export default Home
+export default Page

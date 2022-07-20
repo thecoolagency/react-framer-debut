@@ -1,0 +1,97 @@
+@import url("https://cdn.jsdelivr.net/gh/thecoolagency/thecoolcdn@v1.2.0/css/fix.tca.css");
+@import url("https://cdn.jsdelivr.net/gh/thecoolagency/thecoolcdn@v1.2.0/css/animations.tca.css");
+
+:root {
+    --color-base-text: #ffffff;
+    --color-base-background: #000000;
+    --rgb-base-text: 255, 255, 255;
+    --rgb-base-background: 0, 0, 0;
+    --alt-opacity: 0.75;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--color-base-background);
+    color: var(--color-base-text);
+}
+
+a, button, input {
+    color: var(--color-base-text);
+    text-decoration: none;
+    font-family: inherit;
+}
+
+a:visited, a:focus {
+    color: rgba(var(--rgb-base-text), var(--alt-opacity));
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(var(--rgb-base-text), var(--alt-opacity));
+    text-decoration: none;
+}
+
+/* ######################################
+    header */
+
+.header {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 100vw;
+    display: grid;
+    grid-template-areas: "navigation heading icons";
+    grid-template-columns: 2fr auto 2fr;
+    text-align: center;
+}
+
+.header ul li a, .header ul li span {
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.navigation {
+    grid-area: navigation;
+}
+
+.navigation > ul {
+    column-gap: 2rem;
+}
+
+.heading {
+    grid-area: heading;
+}
+
+.icons {
+    grid-area: icons;
+}
+
+.nav-menu {
+    top: 4.5rem;
+    background-color: var(--color-base-background);
+    height: calc(100vh - 4.5rem);
+    text-align: left;
+    width: 100vw;
+    transition: transform .2s linear;
+}
+
+.nav-menu.slide {
+    transform: translateX(-100vw);
+}
+
+/* title */
+
+h1.nav {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+/* ######################################
+    main */
+
+
+
