@@ -26,7 +26,7 @@ const Auth = () => {
     }, [isLoggedIn]);
 
     // url to redirect user when auth link is clicked
-    let redirectURI = window.location.protocol + "//" + window.location.hostname + '/about';
+    let redirectURI = window.location.protocol + "//" + window.location.hostname + '/profile';
 
     // initialize
     let client = null;
@@ -54,19 +54,7 @@ const Auth = () => {
             redirectURI
         });
         } catch (err) {
-            switch (err.code) {
-                case err.code.MagicLinkFailedVerification:
-                    console.log(err);
-                case err.code.MagicLinkExpired:
-                    console.log(err);
-                case err.code.MagicLinkRateLimited:
-                    console.log(err);
-                case err.code.UserAlreadyLoggedIn:
-                    console.log(err);
-                // Handle errors accordingly :)
-                break;
-            }
-
+            alert(err.code)
         }
     };
 

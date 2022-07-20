@@ -1,4 +1,11 @@
-# Getting Started with Create React App
+# CRA Template with Authentication
+
+## By Jonah
+
+- To use the Authentication get started at [Magic](https://magic.link/) to get your API keys, then rename `env.example` to `.env` and fill out the variables.
+- For styling, start at src/styles/theme.css and start by editing the :root variables, then customize as needed.
+
+___________________________________
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
